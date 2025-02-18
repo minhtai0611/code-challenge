@@ -89,7 +89,11 @@ Optimize database queries for performance.
     Token-Based Authentication:
     Users log in and receive a JSON Web Token (JWT).
     The JWT is included in the Authorization header of API requests.
-    Example: Authorization: Bearer <JWT>
+    Example:
+
+```sh
+    Authorization: Bearer <JWT>
+```
 
     Validation:
     Verify the JWT signature and expiration.
