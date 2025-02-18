@@ -47,24 +47,34 @@ npm start
 
 ### Create a resource
 
-- curl -X POST http://localhost:3000/api/resources \
+```sh
+curl -X POST http://localhost:3000/api/resources \
    -H "Content-Type: application/json" \
    -d '{"name": "Resource 1", "description": "This is a resource being generated"}'
+```
 
 ### List all resources
 
-- curl http://localhost:3000/api/resources
+```sh
+curl http://localhost:3000/api/resources
+```
 
 ### Get a resource by ID
 
-- curl http://localhost:3000/api/resources/1
+```sh
+curl http://localhost:3000/api/resources/1
+```
 
 ### Update a resource
 
-- curl -X PUT http://localhost:3000/api/resources/1 \
+```sh
+curl -X PUT http://localhost:3000/api/resources/1 \
    -H "Content-Type: application/json" \
    -d '{"name": "Updated Resource", "description": "This resource has been updated"}'
+```
 
 ### Delete a resource
 
-- curl -X DELETE http://localhost:3000/api/resources/1
+```sh
+curl -X DELETE http://localhost:3000/api/resources/1
+```
