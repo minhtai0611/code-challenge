@@ -12,31 +12,31 @@ The scoreboard module is responsible for:
 
 ## Scoreboard Display:
 
-Display the top 10 users with the highest scores.
-Update the scoreboard in real-time when scores change.
+- Display the top 10 users with the highest scores.
+- Update the scoreboard in real-time when scores change.
 
 ## Score Update:
 
-Allow users to increase their scores by completing actions.
-Validate and authorize score update requests.
+- Allow users to increase their scores by completing actions.
+- Validate and authorize score update requests.
 
 ## Security:
 
-Prevent unauthorized users from updating scores.
-Use token-based authentication (JWT) to verify user identity.
+- Prevent unauthorized users from updating scores.
+- Use token-based authentication (JWT) to verify user identity.
 
 ## Scalability:
 
-Handle a large number of concurrent users.
-Optimize database queries for performance.
+- Handle a large number of concurrent users.
+- Optimize database queries for performance.
 
 # API endpoints:
 
 ## Update User Score
 
-    Endpoint: POST /api/scores/update
-    Description: Updates the user's score when they complete an action.
-    Request Body:
+- Endpoint: POST /api/scores/update
+- Description: Updates the user's score when they complete an action.
+- Request Body:
 
 ```json
 {
@@ -45,7 +45,7 @@ Optimize database queries for performance.
 }
 ```
 
-    Response:
+- Response:
 
 ```json
 {
@@ -57,9 +57,9 @@ Optimize database queries for performance.
 
 ## Get Top 10 Scores
 
-    Endpoint: GET /api/scores/top
-    Description: Retrieves the top 10 users with the highest scores.
-    Response:
+- Endpoint: GET /api/scores/top
+- Description: Retrieves the top 10 users with the highest scores.
+- Response:
 
 ```json
 [
@@ -70,9 +70,9 @@ Optimize database queries for performance.
 
 ## Real-Time Scoreboard Updates
 
-    Endpoint: GET /api/scores/live
-    Description: Establishes a WebSocket or SSE connection for real-time scoreboard updates.
-    Response:
+- Endpoint: GET /api/scores/live
+- Description: Establishes a WebSocket or SSE connection for real-time scoreboard updates.
+- Response:
 
 ```json
 {
