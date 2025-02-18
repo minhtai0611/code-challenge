@@ -37,39 +37,52 @@ Optimize database queries for performance.
     Endpoint: POST /api/scores/update
     Description: Updates the user's score when they complete an action.
     Request Body:
-    {
-    "userId": "123",
-    "scoreIncrease": 10
-    }
+
+```json
+{
+  "userId": "123",
+  "scoreIncrease": 10
+}
+```
+
     Response:
-    {
-    "success": true,
-    "message": "Score updated successfully",
-    "newScore": 110
-    }
+
+```json
+{
+  "success": true,
+  "message": "Score updated successfully",
+  "newScore": 110
+}
+```
 
 ## Get Top 10 Scores
 
     Endpoint: GET /api/scores/top
     Description: Retrieves the top 10 users with the highest scores.
     Response:
-    [
-    { "userId": "123", "username": "user1", "score": 200 },
-    { "userId": "456", "username": "user2", "score": 150 }
-    ]
+
+```json
+[
+  { "userId": "123", "username": "user1", "score": 200 },
+  { "userId": "456", "username": "user2", "score": 150 }
+]
+```
 
 ## Real-Time Scoreboard Updates
 
     Endpoint: GET /api/scores/live
     Description: Establishes a WebSocket or SSE connection for real-time scoreboard updates.
     Response:
-    {
-    "event": "scoreUpdate",
-    "data": [
+
+```json
+{
+  "event": "scoreUpdate",
+  "data": [
     { "userId": "123", "username": "user1", "score": 200 },
     { "userId": "456", "username": "user2", "score": 150 }
-    ]
-    }
+  ]
+}
+```
 
 # Authorization Mechanism
 
