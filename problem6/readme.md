@@ -86,31 +86,31 @@ Optimize database queries for performance.
 
 # Authorization Mechanism
 
-    Token-Based Authentication:
-    Users log in and receive a JSON Web Token (JWT).
-    The JWT is included in the Authorization header of API requests.
-    Example:
+- Token-Based Authentication:
+  Users log in and receive a JSON Web Token (JWT).
+  The JWT is included in the Authorization header of API requests.
+  Example:
 
 ```sh
     Authorization: Bearer <JWT>
 ```
 
-    Validation:
-    Verify the JWT signature and expiration.
-    Ensure the userId in the JWT matches the userId in the request.
-    Rate Limiting:
-    Implement rate limiting to prevent abuse.
+- Validation:
+  Verify the JWT signature and expiration.
+  Ensure the userId in the JWT matches the userId in the request.
+- Rate Limiting:
+  Implement rate limiting to prevent abuse.
 
 # Real-Time Updates
 
-    WebSocket or SSE:
-    Use WebSocket or Server-Sent Events (SSE) to push scoreboard updates to clients.
-    When a score is updated, broadcast the new top 10 scores to all connected clients.
+- WebSocket or SSE:
+  Use WebSocket or Server-Sent Events (SSE) to push scoreboard updates to clients.
+  When a score is updated, broadcast the new top 10 scores to all connected clients.
 
-    Event Flow:
-    Client establishes a WebSocket/SSE connection to /api/scores/live.
-    Server sends initial top 10 scores.
-    Server broadcasts updates whenever scores change.
+- Event Flow:
+  Client establishes a WebSocket/SSE connection to /api/scores/live.
+  Server sends initial top 10 scores.
+  Server broadcasts updates whenever scores change.
 
 # Database Schema
 
