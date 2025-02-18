@@ -128,21 +128,21 @@ Optimize database queries for performance.
 
 ## Caching:
 
-    Use Redis or another caching layer to store the top 10 scores and reduce database load.
+- Use Redis or another caching layer to store the top 10 scores and reduce database load.
 
 ## Leaderboard Segmentation:
 
-    Implement leaderboards for different time periods (daily, weekly...).
+- Implement leaderboards for different time periods (daily, weekly...).
 
 ## Enhanced Security:
 
-    Use HTTPS to encrypt API traffic.
-    Implement IP-based rate limiting to prevent DDoS attacks.
+- Use HTTPS to encrypt API traffic.
+- Implement IP-based rate limiting to prevent DDoS attacks.
 
 ## Scalability:
 
-    Use a message queue (RabbitMQ, Kafka) to handle high volumes of score updates.
+- Use a message queue (RabbitMQ, Kafka) to handle high volumes of score updates.
 
 ## Analytics:
 
-    Track user activity and score trends for insights.
+- Track user activity and score trends for insights.
