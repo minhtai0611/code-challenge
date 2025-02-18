@@ -4,9 +4,9 @@ A simple CRUD backend server built with ExpressJS and TypeScript.
 
 # Setup
 
-## Clone the repository.
+## Clone the repository
 
-## Install dependencies:
+## Install dependencies
 
 ```sh
 npm install (or npm i)
@@ -35,26 +35,26 @@ npm start
 
 ## Test API requests (initialize Bash environment)
 
-### Create a resource:
+### Create a resource
 
 - curl -X POST http://localhost:3000/api/resources \
 - -H "Content-Type: application/json" \
 - -d '{"name": "Resource 1", "description": "This is a resource being generated"}'
 
-### List all resources:
+### List all resources
 
 - curl http://localhost:3000/api/resources
 
-### Get a resource by ID:
+### Get a resource by ID
 
 - curl http://localhost:3000/api/resources/1
 
-### Update a resource:
+### Update a resource
 
 - curl -X PUT http://localhost:3000/api/resources/1 \
 - -H "Content-Type: application/json" \
 - -d '{"name": "Updated Resource", "description": "This resource has been updated"}'
 
-### Delete a resource:
+### Delete a resource
 
 - curl -X DELETE http://localhost:3000/api/resources/1
