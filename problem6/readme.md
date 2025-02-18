@@ -124,6 +124,23 @@ The scoreboard module is responsible for:
 
 # Execution Flow Diagram
 
+## Score Update Flow Diagram
+
+```mermaid
+sequenceDiagram
+    participant User as User Completes Action
+    participant API as API Service (Backend)
+    participant DB as Database
+    participant Client as Client Receives Real-Time Update
+
+    User->>API: 1. POST /api/scores/update
+    API->>DB: 2. Validate JWT
+    API->>DB: 3. Update User Score
+    API->>DB: 4. Fetch Top 10 Scores
+    API->>User: 5. Broadcast Update
+    API->>Client: WebSocket/SSE Connection
+```
+
 # Improvement Suggestions
 
 ## Caching:
