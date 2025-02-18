@@ -6,12 +6,20 @@ A simple CRUD backend server built with ExpressJS and TypeScript.
 
 ## Clone the repository
 
-- git clone https://github.com/minhtai0611/code-challenge
+```sh
+git clone https://github.com/minhtai0611/code-challenge
+```
 
 ## Install dependencies
 
 ```sh
-npm install (or npm i)
+npm install
+```
+
+or
+
+```sh
+npm i
 ```
 
 ## Start the server in the development mode
