@@ -97,11 +97,13 @@ Optimize database queries for performance.
 
 # Database Schema
 
-Users Table
-Column Type Description
-userId STRING Unique user ID (primary key).
-username STRING User's display name.
-score INTEGER User's current score.
+## Users Table
+
+| Column   | Type    | Description                   |
+| -------- | ------- | ----------------------------- |
+| userId   | STRING  | Unique user ID (primary key). |
+| username | STRING  | User's display name.          |
+| score    | INTEGER | User's current score.         |
 
 # Execution Flow Diagram
 
